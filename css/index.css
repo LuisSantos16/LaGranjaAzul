@@ -1,0 +1,120 @@
+
+
+.container_main-granjas{
+    background-color: #EFEFEF;
+    padding: 50px 0px;
+    .content_main-granjas{
+        max-width: var(--max-width);
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        .content_section-granja{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            gap: 20px;
+            .img_section-granja{
+                width: 400px;
+                img{
+                    width: 100%;
+                }
+            }
+            .txt_section-granja{
+                display: grid;
+                gap: 20px;
+                color: var(--primary_txt-color);
+                width: 400px;
+                h3{
+                    font-weight: lighter;
+                    font-size: 30px;
+                }
+                h2{
+                    font-family: var(--font_family-secundary);
+                    font-size: 45px;
+                    font-weight: bold;
+                    font-style: italic;
+                    letter-spacing: 4px;
+                }
+                p{
+                    font-size: 16px;
+                    line-height: 25px;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}
+
+.container_galeria {
+    max-width: 1250px;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 20px;
+    ul{
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        padding: 0;
+        gap: 100px;
+        li{
+            margin: 0 10px;
+            hr{
+                font-weight: bolder;
+                width: 60px;
+                border: 2px solid #0051ff; 
+            }
+        }
+    }
+    h2{
+        text-align: center;
+        margin: 20px 0;
+        color: var(--primary_txt-color);
+    }
+    .content_galeria {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+        justify-items: center;
+        align-items: center;
+        max-width: 1250px;
+        margin: 0 auto;
+        .container_img-galeria{
+            position: relative;
+            width: 100%;
+            aspect-ratio: 4 / 3;
+            overflow: hidden;
+            .img_galeria {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                transition: 0.3s ease-in-out;
+            } 
+            .overlay_text {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: white;
+                font-size: 14px;
+                opacity: 0;
+                transition: 0.3s ease-in-out;
+                pointer-events: none;
+                text-align: center;
+                width: 80%;
+            } 
+            &.container_img-galeria:hover .img_galeria {
+                filter: brightness(50%);
+            }
+            &.container_img-galeria:hover .overlay_text {
+                opacity: 1;
+            }          
+        }
+    }
+}
+
+
+
+
+

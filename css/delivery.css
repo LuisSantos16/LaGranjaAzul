@@ -1,0 +1,48 @@
+.container_delivery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 60px;
+    color: #00336c;;
+    a{
+        text-decoration: none;
+        background-color: #00336c;
+        color: white;
+        padding: 10px 20px;
+        transition: var(--transition);
+        &:hover{
+            background-color: #A1A5A4;
+        }
+    }
+    h2{
+        font-size: 25px;
+    }
+    .conta_info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 60px;
+        .info{
+            text-align: center;
+            background-color: #00336c;
+            width: 150px;
+            padding: 25px 0px;
+            color: white;
+            h2{
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+            a{
+                text-decoration: none;
+                border: 1px solid white;
+                font-size: 12px;
+                transition: var(--transition);
+                &:hover{
+                    background-color: black;
+                }
+            }
+        }
+    }
+}

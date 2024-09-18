@@ -1,0 +1,74 @@
+.container_footer{
+    background-color: var(--primary_bg-color);
+    color: var(--light_txt-color);
+    .content_footer{
+        max-width: var(--max-width);
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        padding-top: 40px;
+        .first_sector-footer{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .content_social-footer{
+                line-height: 0;
+                p{text-align: center;}
+                .icons_social-footer{
+                    display: flex;
+                    gap: 10px;
+                    align-items: center;
+                    list-style: none;
+                    a{  
+                        color: var(--light_txt-color);
+                        text-decoration: none;
+                    }
+                }
+            }
+            .info_footer{
+                line-height: 10px;
+                h3{
+                    font-family: var(--font_family-secundary);
+                    font-size: 45px;
+                    font-style: italic;
+                    letter-spacing: 2px;
+                }
+                p{
+                    letter-spacing: 1px;
+                }
+                a{
+                    display: block;
+                    text-decoration: none;
+                    background-color: var(--light_bg-color);
+                    padding: 10px 5px;
+                    max-width: 200px;
+                    text-align: center;
+                    font-weight: bolder;
+                    color: var(--primary_txt-color);
+                }
+            }
+
+            .nav_footer{
+                ul{
+                    list-style: none;
+                    a{
+                        color: white;
+                        text-decoration: none;
+                        position: relative;
+                    }
+                    .link-nav_footer{
+                        display: flex;
+                        align-items: center;
+                        position: relative;
+                        .fa-book-open{
+                            position: absolute;
+                            left: -30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+

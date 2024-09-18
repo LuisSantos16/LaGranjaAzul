@@ -1,0 +1,42 @@
+
+.container_restaurantes{
+    max-width: var(--max-width);
+    margin: auto;
+    text-align: center;
+    color: var(--primary_txt-color);
+}
+
+.container_restaurantes figure{
+    margin: 0;
+}
+
+.container_restaurantes figure img{
+    width: 100%;
+}
+
+.container_restaurantes blockquote{
+    display: grid;
+    gap: 20px;
+    padding: 20px 0;
+    margin: 0;
+}
+
+.container_restaurantes blockquote img{
+    display: block;
+    margin: auto;
+}
+
+.container_restaurantes blockquote h3{
+    font-family: var(--font_family-secundary);
+    font-weight: bolder;
+    font-size: 35px;
+    font-style: italic;
+}
+
+.container_restaurantes blockquote h4{
+    font-size: 15px;
+}
+
+.container_restaurantes ul{
+    list-style: none;
+}

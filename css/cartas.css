@@ -1,0 +1,33 @@
+
+.container_cartas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.content_cartas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background: linear-gradient(to top, var(--secondary_bg-color) 76%, white 50%);
+    min-width: 650px;
+    padding: 50px 0;
+}
+
+.content_cartas a{
+    min-width: 250px;
+    background-color: var(--primary_bg-color);
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    color: var(--light_txt-color);
+    transition: var(--transition);
+}
+
+.content_cartas a:hover{
+    background-color: var(--tertiary_bg-color);
+    color: var(--dark_txt-color);
+}

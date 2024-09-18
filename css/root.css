@@ -1,0 +1,40 @@
+:root{
+    --max-width:1250px;
+    --primary_bg-color:#00336c;
+    --secondary_bg-color: #DCE8EF;
+    --tertiary_bg-color:#F0F0F0;
+    --light_bg-color:white;
+    --dark_bg-color:black;
+    --light_txt-color:white;
+    --primary_txt-color:#00336c;
+    --active_link-color:#865b10;
+    --border:1rem;
+    --border_color:white;
+    --border_radius:1rem;
+    --font_size:1rem;
+    --font_family-secundary:"Sevillana", cursive;
+    --gap:1rem;
+    --padding:1rem;
+    --transition: 0.5s;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "SUSE", sans-serif;
+    }
+    
+.f-warp{flex-wrap: wrap}   
+
+.f-wrap_reverse{flex-wrap: wrap-reverse;}
+
+.secondary_bg-color{
+    background-color: var(--secondary_bg-color);
+}
+
+
+
